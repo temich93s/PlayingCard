@@ -13,6 +13,9 @@
 		AA04574A279F3D8400DF8E86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA045748279F3D8400DF8E86 /* Main.storyboard */; };
 		AA04574C279F3D8600DF8E86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA04574B279F3D8600DF8E86 /* Assets.xcassets */; };
 		AA04574F279F3D8600DF8E86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA04574D279F3D8600DF8E86 /* LaunchScreen.storyboard */; };
+		AA045758279F3E1500DF8E86 /* PlayngCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA045757279F3E1500DF8E86 /* PlayngCard.swift */; };
+		AA04575A279F432D00DF8E86 /* PlayingCardDeck.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA045759279F432D00DF8E86 /* PlayingCardDeck.swift */; };
+		AA80234A27B1DF3300A1031D /* PlayingCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA80234927B1DF3300A1031D /* PlayingCardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		AA04574B279F3D8600DF8E86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA04574E279F3D8600DF8E86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AA045750279F3D8600DF8E86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA045757279F3E1500DF8E86 /* PlayngCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayngCard.swift; sourceTree = "<group>"; };
+		AA045759279F432D00DF8E86 /* PlayingCardDeck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingCardDeck.swift; sourceTree = "<group>"; };
+		AA80234927B1DF3300A1031D /* PlayingCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,26 @@
 		AA045741279F3D8400DF8E86 /* PlayingCard */ = {
 			isa = PBXGroup;
 			children = (
-				AA045742279F3D8400DF8E86 /* AppDelegate.swift */,
-				AA045744279F3D8400DF8E86 /* SceneDelegate.swift */,
+				AA045756279F3DBB00DF8E86 /* Supporting Files */,
 				AA045746279F3D8400DF8E86 /* ViewController.swift */,
+				AA80234927B1DF3300A1031D /* PlayingCardView.swift */,
 				AA045748279F3D8400DF8E86 /* Main.storyboard */,
+				AA045757279F3E1500DF8E86 /* PlayngCard.swift */,
+				AA045759279F432D00DF8E86 /* PlayingCardDeck.swift */,
 				AA04574B279F3D8600DF8E86 /* Assets.xcassets */,
-				AA04574D279F3D8600DF8E86 /* LaunchScreen.storyboard */,
 				AA045750279F3D8600DF8E86 /* Info.plist */,
 			);
 			path = PlayingCard;
+			sourceTree = "<group>";
+		};
+		AA045756279F3DBB00DF8E86 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AA04574D279F3D8600DF8E86 /* LaunchScreen.storyboard */,
+				AA045744279F3D8400DF8E86 /* SceneDelegate.swift */,
+				AA045742279F3D8400DF8E86 /* AppDelegate.swift */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +155,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA045758279F3E1500DF8E86 /* PlayngCard.swift in Sources */,
+				AA80234A27B1DF3300A1031D /* PlayingCardView.swift in Sources */,
 				AA045747279F3D8400DF8E86 /* ViewController.swift in Sources */,
+				AA04575A279F432D00DF8E86 /* PlayingCardDeck.swift in Sources */,
 				AA045743279F3D8400DF8E86 /* AppDelegate.swift in Sources */,
 				AA045745279F3D8400DF8E86 /* SceneDelegate.swift in Sources */,
 			);
@@ -285,7 +305,7 @@
 		AA045754279F3D8600DF8E86 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -313,7 +333,7 @@
 		AA045755279F3D8600DF8E86 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
